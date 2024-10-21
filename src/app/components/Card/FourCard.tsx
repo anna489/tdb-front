@@ -52,7 +52,7 @@ const cardData = [
 
 export const FourCard = () => {
   return (
-    <div className="bg-[#F5F5F7] p-16 ">
+    <div className="bg-[#F5F5F7] md:p-16 p-8 ">
       <div className="flex justify-between items-center py-10">
         <h1 className="md:text-[48px] text-[20px] text-[#1B2D6B] font-semibold w-[50%]">
           Oнцлох мэдээ
@@ -67,7 +67,7 @@ export const FourCard = () => {
 
       <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-6 ">
         {cardData.map((card, index) => (
-          <div key={index} className="bg-white p-4 rounded-xl">
+          <div key={index} className="p-4 rounded-xl">
             <img src={card.imgSrc} alt="" className="rounded-xl" />
             <h1 className="text-[16px] font-semibold my-2 mx-2">
               {card.title}
@@ -75,19 +75,6 @@ export const FourCard = () => {
             <p className="text-[13px] font-normal my-2 mx-2">
               {card.description}
             </p>
-            <div className="border w-full"></div>
-            <p className="text-[13px] font-light my-2 mx-2">{card.date}</p>
-            <div className="flex justify-between items-center my-2 mx-2">
-              <p className="text-[15px] text-[#2986FE] font-semibold">
-                {card.category}
-              </p>
-              <p className="flex gap-2 justify-center items-center">
-                <span>
-                  <MdRemoveRedEye />
-                </span>
-                {card.views}
-              </p>
-            </div>
           </div>
         ))}
       </div>

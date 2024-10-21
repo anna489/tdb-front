@@ -8,6 +8,7 @@ import { FourCard } from "./components/Card/FourCard";
 import { RegisterCard } from "./components/Card/RegisterCard";
 import { Footer } from "./components/Footer";
 import { ScrollingLogos } from "./components/Card/ScrollingLogos";
+import { New } from "./components/News";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ScrollingLogos />
       <ThreeCard />
       <PersonInformation />
+      <New />
       <FourCard />
       <InstallBanner />
       <RegisterCard />
